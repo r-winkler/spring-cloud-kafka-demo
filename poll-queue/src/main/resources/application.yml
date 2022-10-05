@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        producer-out-0:
+          destination: my-topic
+
+

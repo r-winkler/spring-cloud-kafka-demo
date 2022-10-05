@@ -1,0 +1,6 @@
+kafka:
+  bootstrapAddress: localhost:9092
+  topicName: my-topic
+  groupId: my-group
+
+

@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    function:
+      definition: consumer;
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        producer-out-0:
+          destination: first-topic
+        consumer-in-0:
+          destination: first-topic
+          consumer:
+            maxAttempts: 10
+            backOffMaxInterval: 100000
+
+
